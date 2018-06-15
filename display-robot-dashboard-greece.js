@@ -1,11 +1,11 @@
 'use strict';
 
 (function display_robot_dashboard_greece() {
+    console.log('running display_robot_dashboard_greece');
     var g = (initial_ix) => {    
         var last_window_pageyoffset = -1;
         var i = initial_ix || 0;
-        return () => {
-            console.log('running display_robot_dashboard_greece');
+        return () => {            
             try {                
                 var reached_bottom = ((window.pageYOffset - last_window_pageyoffset) == 0);
                 if (!reached_bottom) {
@@ -36,5 +36,4 @@
     var companies = companies_graphs.querySelectorAll('.company-link');
     var default_item_height = companies_graphs.querySelector('.company-link li').offsetHeight;
     var drd_interval = setInterval(g(), scroll_speed);
-    return drd_interval;
 })();
