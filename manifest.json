@@ -1,6 +1,6 @@
 {    
     "name": "rupeeweb-display-robot",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "rupeeweb-display-robot",    
     "background": {
         "scripts": ["background.js"]  
